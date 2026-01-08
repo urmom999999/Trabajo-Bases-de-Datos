@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx,float}
+\usepackage{hyperref}
+\graphicspath{{images/}}
+\title{Guia de instalacion de LaTex}
+\author{Álvaro Del Valle Fernández}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+LaTex es un sistema de creación de documentos de alta calidad, utilizado para documentos cientificos, articulos y libros. En esta guia mostrare paso a paso el proceso de instalación de este software.
+\section{Instalaccion de LaTex}
+El primer paso es instalar el software LaTex en si, los siguientes pasos consistiran en instalar otros elementos para que funcionen correctamente en Visual Studio.
+\subsection{Descarga del software}
+Para obtener el software debemos acceder a la pagina oficial mediante el link adjuntado:
+\url{https://miktex.org/download}
+\\Una vez entrada a la pagina debemos hacer click en tu sistema operativo y luego en Download.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{imagen1.png}
+\end{figure}
+\subsection{Instalación del software}
+Una vez terminada la descarga ejecutamos el archivo, aceptamos las condiciones, \textit{Next}, \textit{Next}, \textit{Next}, Start y esperamos a que instale. Una vez terminada seleccionamos \textit{Next}, \textit{Next} y Close.
+\\Tras esto tendriamos LaTex instalado correctamente en nuestro ordenador.
+
+
+\section{Instalaccion de Perl}
+
+Necesitamos descargar Perl para su lenguaje, permitiendo numerosas funciones y scripts.
+\subsection{Descarga del software}
+Para obtener el software debemos acceder a la pagina oficial mediante el link adjuntado:
+\url{https://strawberryperl.com/}
+\\Una vez en la pagina hacemos click en el ultimo lanzamiento, el archivo tipo MSI.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{imagen2.png}
+\end{figure}
+\subsection{Instalación del software}
+Ejecutamos el archivo, \textit{Next}, aceptamos la licencia, \textit{Next},\textit{Next}, Install y Finish.
+\\Con esto tendremos este elemento descargado correctamente. Tras este paso se recomienda abrir Perl y buscar actualizaciones, tras ello es recomendable reiniciar el ordenador.
+
+\section{LaTeX Workshop}
+Este programa sirve para poder editar correctamente los archivos desde Visual Studio.
+\subsection{Descarga del software}
+Para obtener el software debemos acceder a la pagina oficial mediante el link adjuntado:
+\url{https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{imagen3.png}
+\end{figure}
+\subsection{Instalación del software}
+Ejecutamos el programa, le damos a \textit{Next}, aceptar licencia, \textit{Next} e Instalar.
+\\Otra opcion mas adecuada es instalarlo directamente desde Visual Studio, accediendo a Extensiones, LaTeX Workshop e Instalar.
+\\Con ello lo tendriamos correctamente instalado.
+\section{Conclusión}
+Tras realizar todos los pasos debemos poder ver el boton de TEX en la barra izquierda de Visual Studio. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{imagen4.png}
+\end{figure}
+Si seleccionamos "Build LaTex project" nos creará los archivos correctamente, pudiendo crear nuestro primer .tex.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{imagen5.png}
+\end{figure}
+
+\end{document}
