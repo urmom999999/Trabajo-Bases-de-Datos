@@ -45,53 +45,85 @@
 
 
 \section{Introducción}
-En esta práctiva veremos tres de los principales sistemas de gestion de gestion de bases de datos junto las diferencias entre ellos,
+En esta práctica veremos tres de los principales sistemas de gestion de gestion de bases de datos junto las diferencias entre ellos,
  veremos tambien su historia y cual se adapta mejor a cada tipo de proyecto segun sus puntos fuertes y sus puntos debiles.
+ Elegir la base de datos adecuada para un proyecto es fundamental, adaptandose a las necesidades de este.
 
 
 \section{MySQL}
 \subsection{Historia de MySQL}
-En 1995 Michael Widenius junto con su equipo desarrollaron MySQL, siendo lanzada en 2001, este consiste en sistema de almacenamiento
- de archivos orientado a uso domestico y profesional. En 2010 fue comprado por Oracle. Hoy en dia es utilizada por muchos de los sitios web mas importantes, como Facebook, Twitter, Wikipedia, Youtube, Google...
+En 1995 Michael Widenius junto con su equipo desarrollaron MySQL, siendo lanzado completamente en 2001,
+ este consiste en sistema de almacenamiento
+ de archivos orientado a uso domestico y profesional, creado para cubrir la demanda de bases de datos de codigo abierto
+ y sencillas. En 2010 fue comprado por Oracle. Hoy en dia es utilizada por muchos de los sitios web mas importantes, como Facebook, Twitter, Wikipedia, Youtube, Google...
 \subsection{Puntos positivos y negativos}
-MySQL es sencillo de aprender, bueno para leer datos, compatible con multiples sistemas operativos, cuenta con un buen soporte de la comunidad al ser codigo open-source.\\
+MySQL es sencillo de aprender, bueno para leer datos, compatible con multiples sistemas operativos,
+ cuenta con un buen soporte de la comunidad al ser codigo open-source, perfecto para aplicaciones web
+  y para bases de datos de tamaño pequeño y mediano.\\
 
-Sus puntos debiles son su mal rendimiento en procesos complicados, siendo limitado para actualizar y ampliar la base de datos.
+Sus puntos debiles son su mal rendimiento en procesos complicados, siendo limitado para actualizar y 
+ampliar la base de datos.
 
 \subsection{Casos de uso}
-MySQL es perfecto para proyectos que necesiten leer gran cantidad de datos, no para editado de datos.
- Con su codigo abierto con ayuda de la comunidad, este resulta sencillo de utilizar por lo que es perfecto para proyectos sencillos y complicados.
+MySQL es perfecto para proyectos que necesiten leer gran cantidad de datos rapidamente, no para editado de datos.
+ Con su codigo abierto con ayuda de la comunidad, este resulta sencillo de utilizar por lo que es perfecto para 
+ proyectos sencillos o complicados.
 
+
+\newpage
 \section{MongoDB}
 \subsection{Historia de MongoDB}
-
+MongoDB fue lanzado en el 2009, su objetivo era crear un nuevo sistema de bases de datos para
+ gestionar datos no estructurados, usando modelos no SQL y simplificando numerosos elementos.
 \subsection{Puntos positivos y negativos}
-
+Perfecto para proyectos que precisen de escalabilidad, siendo automatico, su flexibilidad ayuda a realizar
+ los proyectos de forma mucho mas sencilla y rapida. Destaca en escritura.\\
+ Sus puntos negativos son problemas de robustez del sistema, en casos de transacciones y posibles duplicados.
+  Tambien existen problemas de consumo de RAM, siendo mucho mas alta que las otras opciones. 
+  Ciertos elementos pueden resultar mas complejos al ser elementos originalmente de SQL.
 \subsection{Casos de uso}
+Perfecto para proyectos no estructurados o semi estructurados que puedan necesitar escalabilidad,
+ siendo esta automatica y mucho mas sencilla. Facil de realizar proyectos con ella siendo mas rapido que las 
+ otras alternativas.
 
 
 
+\newpage
 \section{SQLite}
 \subsection{Historia de SQLite}
-
+Lanzado en el 2000, se centra en ser "lite" ligera, sin necesidad de servidor ni muchos de los elementos pesados 
+de las otras bases de datos. Este nuevo sistema fue perfecto para sistemas de bajos recursos como moviles y sistemas 
+mas basicos, creando la base de datos como archivo.
 \subsection{Puntos positivos y negativos}
+SQLite no precisa de servidor y la instalacion es extremadamente simple y muy ligera, la base de datos es solo un archivo siendo
+ extremadamente facil de mover. Es muy compatible con casi todas las plataformas y es de dominio publico, olvidandose de licencias.
+Problemas con escrituras multiples, saturandose, al no existir un servidor como tal, los usuarios acceden al documento directamente,
+ pudiendo generar problemas de escritura. Al ser solo un archivo y estar diseñado para elementos ligeros no se adapta bien a 
+ aplicaciones grandes y su escalabilidad es limitada. Sus opciones avanzadas son limitadas comparado con las otras.
+ \subsection{Casos de uso}
+SQLite destaca por ser extremadamente portable, por lo que el caso de uso es cuando se necesite una base de datos 
+muy ligera (menos de un MB) y extremadamente portable, que no consuma muchos recursos y sin multiples usuarios modificando la base de datos.
 
-\subsection{Casos de uso}
-
-
-
+\newpage
 \section{PostgreSQL}
 \subsection{Historia de PostgreSQL}
-
+Lanzada en 1996 siendo open source, PostgreSQL  esta basada en la anterior Postgres, siendo esta la evolución. Se centra en crear una 
+base de datos relacional orientada a objetos, centrada en estabilidad y opciones muy avanzadas.
 \subsection{Puntos positivos y negativos}
-
+PostgreSQL destaca en su consistencia, siendo muy robusto y siguiendo los estandares SQL, cuenta con todas las 
+opciones avanzadas centrandose en estabilidad mas que en velocidad.
+Sus puntos negativos son su complejidad, al contar con todas las opciones avanzadas y los niveles mas altos de seguridad
+es complicada de aprender. Es mas lenta que las otras alternativas debido a la seguridad y puede consumir mucha 
+RAM comparada con las mencionadas anteroirmente.
 \subsection{Casos de uso}
-
-
+Perfecto para proyectos que precisen de estabilidad y precisión, como es el caso de bases de datos de bancos y sistemas
+de análisis. No se permite la perdida o duplicado de datos en estos entornos por lo que este es uno de los sistemas mas
+ estables para ello. Cuando se necesisten movimientos muy complicados y con estabilidad este es el sistema adecuado.
 
 \section{Conclusión}
-
-
-
-
+Tras analizar cada una y conociendo directamente MongoDB y MySQL, estas dos son las que mas me interesan para mis 
+futuros proyectos. SQLite es extremadamente interesante por lo que aprenderé mas de ella pero PostgreSQL no lo veo 
+tan necesario para mis proyectos, siendo un sistema dificil de aprender y con opciones que no necesito en mi caso.\\
+    MongoDB es la que me resultó mas intuitiva, adaptandome bien y solo teniendo problemas con elementos externos 
+del servidor.
 \end{document}
